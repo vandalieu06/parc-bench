@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <rect x="0" y="20" width="120" height="8" rx="4" fill="#2d4a2d"/>
+  <rect x="10" y="30" width="8" height="20" rx="2" fill="#3d4d3d"/>
+  <rect x="50" y="30" width="8" height="20" rx="2" fill="#3d4d3d"/>
+  <rect x="90" y="30" width="8" height="20" rx="2" fill="#3d4d3d"/>
+  <text x="130" y="38" font-family="DM Sans, Arial, sans-serif" font-size="18" font-weight="600" fill="#2d4a2d">ParcBench</text>
+</svg>

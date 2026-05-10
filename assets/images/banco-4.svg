@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#c8dce8"/>
+  <rect x="45" y="100" width="310" height="65" rx="10" fill="#4a90a4"/>
+  <rect x="75" y="165" width="20" height="85" rx="6" fill="#3a7084"/>
+  <rect x="300" y="165" width="20" height="85" rx="6" fill="#3a7084"/>
+  <rect x="175" y="165" width="20" height="85" rx="6" fill="#3a7084"/>
+  <text x="200" y="280" font-family="Arial" font-size="14" fill="#2a5064" text-anchor="middle">Banco Acero Inoxidable Vista Lago</text>
+</svg>

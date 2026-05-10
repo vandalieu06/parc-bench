@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#e8dcd4"/>
+  <rect x="40" y="105" width="320" height="55" rx="6" fill="#b85c8a"/>
+  <rect x="65" y="160" width="15" height="80" rx="4" fill="#8a3c5a"/>
+  <rect x="315" y="160" width="15" height="80" rx="4" fill="#8a3c5a"/>
+  <rect x="185" y="160" width="15" height="80" rx="4" fill="#8a3c5a"/>
+  <text x="200" y="280" font-family="Arial" font-size="14" fill="#6a2c4a" text-anchor="middle">Banco Romántico Fuente de los Sueños</text>
+</svg>

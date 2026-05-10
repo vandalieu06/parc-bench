@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ParcBench - La guía definitiva de bancos de parque. Encuentra los bancos más cómodos, limpios y con mejores vistas cercanos.">
+  <title>ParcBench - Guia de Bancs de Parcs</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER & NAVEGACIÓN -->
+  <header id="menu" class="header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="ParcBench - Inicio">
+        <img src="assets/logo.svg" alt="" width="160" height="48">
+      </a>
+      <nav id="menu" aria-label="Navegación principal">
+        <!-- ERROR #10 y #13: Orden de tabulación incorrecto - footer primero, header después -->
+        <ul class="nav-links">
+          <li><a href="#inicio" tabindex="2">Inicio</a></li>
+          <li><a href="#galeria" tabindex="2">Galería</a></li>
+          <li><a href="#informacion" tabindex="2">Información</a></li>
+          <li><a href="#promocion" tabindex="2">Promoción</a></li>
+          <li><a href="#precios" tabindex="2">Precios</a></li>
+          <li><a href="#contacto" tabindex="2">Contacto</a></li>
+        </ul>
+        <a href="#registro" class="btn btn-primary" tabindex="2">Regístrate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h1 class="hero-title">Los bancos de parque<br>más allá del banco</h1>
+        <p class="hero-subtitle">Descubre, comparte y valora los mejores bancos de parque. Una comunidad para amantes de los espacios verdes urbanos.</p>
+        <div class="hero-ctas">
+          <a href="#registro" class="btn btn-primary btn-large">Únete a la comunidad</a>
+          <a href="#galeria" class="btn btn-secondary">Explorar bancos</a>
+        </div>
+        <!-- ERROR #1: Imagen decorativa con alt irrelevante -->
+        <img src="assets/images/hero-parque.svg" alt="foto" class="hero-image">
+      </div>
+    </section>
+
+    <!-- GALERÍA DE BANCOS -->
+    <section id="galeria" class="gallery">
+      <div class="container">
+        <h2 class="section-title">Descubre los mejores bancos</h2>
+        <!-- ERROR #14: Texto en catalán sin lang="ca" -->
+        <p class="section-subtitle">Els millors bancs de parc, valorats per tu</p>
+        <!-- ERROR #15: Texto en inglés sin lang="en" -->
+        <p class="section-subtitle">Best park benches, curated by our community</p>
+        <div class="gallery-grid">
+          <div class="card card-featured">
+            <!-- ERROR #1: Imagen sin atributo alt -->
+            <img src="assets/images/banco-1.svg">
+            <div class="card-body">
+              <!-- ERROR #6: Estado indicado solo por color (verde=disponible, rojo=ocupado) -->
+              <span class="status-dot available"></span><span class="status-dot busy"></span>
+              <h3>Banco Clásico del Parque Central</h3>
+              <p>Valorado como el más cómodo de la ciudad. Sombra garantizada.</p>
+              <span class="badge badge-new">Nuevo</span>
+            </div>
+          </div>
+          <div class="card card-featured">
+            <img src="assets/images/banco-2.svg" alt="Banco de madera moderna con respaldo ergonómico">
+            <div class="card-body">
+              <h3>Banco Moderno del Parque Norte</h3>
+              <p>Diseño ergonómico, ideal para leer y relajarse.</p>
+            </div>
+          </div>
+          <div class="card card-featured">
+            <img src="assets/images/banco-3.svg" alt="Banco de hierro forjado con vistas al jardín botánico">
+            <div class="card-body">
+              <h3>Banco del Jardín Botánico</h3>
+              <p>Entorno natural único rodeado de flora autóctona.</p>
+            </div>
+          </div>
+          <div class="card card-featured">
+            <img src="assets/images/banco-4.svg">
+            <div class="card-body">
+              <h3>Banco Acero Inoxidable Vista Lago</h3>
+              <p>Impresionantes vistas al lago. Atardeceres inolvidables.</p>
+              <span class="badge badge-new">Popular</span>
+            </div>
+          </div>
+          <div class="card card-featured">
+            <img src="assets/images/banco-5.svg" alt="Banco artesanal ubicado en la colina">
+            <div class="card-body">
+              <h3>Banco de la Colina del Silencio</h3>
+              <p>El lugar perfecto para desconectar del ruido urbano.</p>
+            </div>
+          </div>
+          <div class="card card-featured">
+            <img src="assets/images/banco-6.svg" alt="Banco romántico junto a la fuente">
+            <div class="card-body">
+              <h3>Banco de la Fuente de los Sueños</h3>
+              <p>El banco más romántico de la ciudad. Ideal para parejas.</p>
+              <span class="badge badge-beta">Recomendado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMACIÓN -->
+    <section id="informacion" class="info">
+      <div class="container">
+        <h2 class="section-title">¿Qué es ParcBench?</h2>
+        <p class="section-subtitle">Una plataforma creada por y para amantes de los parques urbanos</p>
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Comparte experiencias</h3>
+            <p>Sube fotos y reseñas de los bancos que visites. Ayuda a otros a encontrar el banco perfecto para cada momento.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Rankings y valoraciones</h3>
+            <p>Consulta los bancos mejor valorados por su comodidad, limpieza, vistas y tranquilidad. Encuentra tu rincón ideal.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Mapa interactivo</h3>
+            <p>Localiza los bancos cercanos a ti, filtra por categoría y descubre joyas escondidas en tu propia ciudad.</p>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-number">2.847</span>
+            <span class="stat-label">Bancos registrados</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">12.563</span>
+            <span class="stat-label">Valoraciones</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">486</span>
+            <span class="stat-label">Ciudades</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">4.8 ★</span>
+            <span class="stat-label">Valoración media</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOCIÓN -->
+    <section id="promocion" class="promo">
+      <div class="container">
+        <h2 class="section-title">Bancos destacados del mes</h2>
+        <p class="section-subtitle">Los mejores bancos valorados por nuestra comunidad</p>
+        <div class="promo-matrix">
+          <div class="promo-card promo-card-coral">
+            <span class="badge badge-new">#1</span>
+            <h3 class="promo-card-title">Parque Central</h3>
+            <p>El banco más cómodo de la ciudad. Respaldo ergonómico y sombra natural.</p>
+            <div class="promo-tags">
+              <span class="tag">Cómodo</span>
+              <span class="tag">Sombra</span>
+              <span class="tag">Tranquilo</span>
+            </div>
+          </div>
+          <div class="promo-card promo-card-blue">
+            <span class="badge badge-new">#2</span>
+            <h3 class="promo-card-title">Vista al Lago</h3>
+            <p>Atardeceres espectaculares. El banco más instagrameado de la temporada.</p>
+            <div class="promo-tags">
+              <span class="tag">Vistas</span>
+              <span class="tag">Romántico</span>
+              <span class="tag">Fotos</span>
+            </div>
+          </div>
+          <div class="promo-card promo-card-purple">
+            <span class="badge badge-new">#3</span>
+            <h3 class="promo-card-title">Jardín Botánico</h3>
+            <p>Rodeado de naturaleza. El más limpio y mejor cuidado de todo el directorio.</p>
+            <div class="promo-tags">
+              <span class="tag">Naturaleza</span>
+              <span class="tag">Limpio</span>
+              <span class="tag">Paz</span>
+            </div>
+          </div>
+          <div class="promo-card promo-card-magenta">
+            <span class="badge badge-new">#4</span>
+            <h3 class="promo-card-title">Colina del Silencio</h3>
+            <p>Perfecto para leer. El más tranquilo. Sin ruido de tráfico ni multitudes.</p>
+            <div class="promo-tags">
+              <span class="tag">Silencio</span>
+              <span class="tag">Lectura</span>
+              <span class="tag"> relax</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="promo-cta">
+          <div class="promo-cta-card">
+            <h2>¿Conoces un banco increíble?</h2>
+            <p>Comparte tu experiencia y gana recompensas</p>
+            <a href="#registro" class="btn btn-tertiary">Comparte ahora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="precios" class="pricing">
+      <div class="container">
+        <h2 class="section-title">Planes para todos los exploradores</h2>
+        <p class="section-subtitle">Elige el plan que mejor se adapte a tu pasión por los parques</p>
+
+        <div class="pricing-tabs">
+          <button class="pill-tab pill-tab-active">Mensual</button>
+          <button class="pill-tab">Anual</button>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3 class="pricing-name">Explorador</h3>
+            <p class="pricing-price"><span class="price">Gratis</span></p>
+            <ul class="pricing-features">
+              <li>Ver bancos cercanos</li>
+              <li>Valorar hasta 10 bancos</li>
+              <li>Mapa básico</li>
+            </ul>
+            <a href="#registro" class="btn btn-secondary btn-full">Empezar gratis</a>
+          </div>
+          <div class="pricing-card pricing-card-featured">
+            <span class="badge badge-beta">Más popular</span>
+            <h3 class="pricing-name">Aventurero</h3>
+            <p class="pricing-price"><span class="price">4,99€</span> <span class="period">/mes</span></p>
+            <ul class="pricing-features">
+              <li>Todo lo del plan Explorador</li>
+              <li>Valoraciones ilimitadas</li>
+              <li>Fotos en alta calidad</li>
+              <li>Sin publicidad</li>
+            </ul>
+            <a href="#registro" class="btn btn-primary btn-full">Suscribirse</a>
+          </div>
+          <div class="pricing-card">
+            <h3 class="pricing-name">Explorador Supremo</h3>
+            <p class="pricing-price"><span class="price">9,99€</span> <span class="period">/mes</span></p>
+            <ul class="pricing-features">
+              <li>Todo lo del plan Aventurero</li>
+              <li>Mapa interactivo avanzado</li>
+              <li>Rutas personalizadas</li>
+              <li>Badge de embajador</li>
+              <li>Acceso anticipo a novedades</li>
+            </ul>
+            <a href="#registro" class="btn btn-secondary btn-full">Suscribirse</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRO -->
+    <section id="registro" class="register">
+      <div class="container">
+        <h2 class="section-title">Únete a la comunidad</h2>
+        <p class="section-subtitle">Regístrate y empieza a descubrir los mejores bancos de parque</p>
+
+        <!-- ERROR #8: Banner parpadeante sin control de usuario -->
+        <div class="promo-banner blink">
+          <p>&#127881; Los primeros 100 registros reciben un mes gratis del plan Aventurero <span class="flash-element" aria-hidden="true"></span></p>
+        </div>
+
+        <form class="register-form" action="#" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="nombre" placeholder="Nombre completo" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="email" id="correo" placeholder="Correo electrónico" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="password" id="contrasena" placeholder="Contraseña" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group form-group-select">
+              <select id="plan" onchange="this.form.submit()">
+                <option value="">Selecciona un plan</option>
+                <option value="explorador">Explorador (Gratis)</option>
+                <option value="aventurero">Aventurero (4,99€/mes)</option>
+                <option value="supremo">Explorador Supremo (9,99€/mes)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+          <!-- ERROR #20: Botón con div sin tipo ni semántica de botón -->
+          <div id="menu" class="btn btn-primary btn-large btn-full" onclick="var e=document.querySelector('.register-form');if(e)e.dispatchEvent(new Event('submit'));">Crear cuenta</div>
+          </div>
+          <div class="form-message" id="form-message"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- MAPA DEL SITIO -->
+    <section id="sitio" class="sitemap">
+      <div class="container">
+        <h2 class="section-title">Mapa del sitio</h2>
+        <div class="sitemap-grid">
+          <div class="sitemap-col">
+            <h3>Navegación</h3>
+            <ul>
+              <li><a href="#inicio" tabindex="1">Inicio</a></li>
+              <li><a href="#galeria" tabindex="1">Galería</a></li>
+              <li><a href="#informacion" tabindex="1">Información</a></li>
+              <li><a href="#promocion" tabindex="1">Promoción</a></li>
+              <li><a href="#precios" tabindex="1">Precios</a></li>
+              <li><a href="#registro" tabindex="1">Registro</a></li>
+              <li><a href="#" tabindex="1">Enlace vacío</a></li>
+            </ul>
+          </div>
+          <div class="sitemap-col">
+            <h3>Categorías</h3>
+            <ul>
+              <li><a href="#inicio">Bancos cómodos</a></li>
+              <li><a href="#inicio">Bancos tranquilos</a></li>
+              <li><a href="#inicio">Mejores vistas</a></li>
+              <li><a href="#inicio">Bancos limpios</a></li>
+              <li><a href="#inicio">Bancos románticos</a></li>
+            </ul>
+          </div>
+          <div class="sitemap-col">
+            <h3>Comunidad</h3>
+            <ul>
+              <li><a href="#inicio">Foro de discusión</a></li>
+              <li><a href="#inicio">Blog de parques</a></li>
+              <li><a href="#inicio">Eventos y quedadas</a></li>
+              <li><a href="#inicio">Programa de embajadores</a></li>
+            </ul>
+          </div>
+          <div class="sitemap-col">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#inicio">Términos y condiciones</a></li>
+              <li><a href="#inicio">Política de privacidad</a></li>
+              <li><a href="#inicio">Política de cookies</a></li>
+              <li><a href="#inicio">Aviso legal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO / FOOTER -->
+    <footer id="contacto" class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src="assets/logo.svg" alt="" width="140" height="42">
+            <p>Descubre el banco perfecto para cada momento.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Contacto</h4>
+              <p>info@parcbench.com</p>
+              <p>+34 93 123 45 67</p>
+              <p>Carrer del Parc, 42<br>08001 Barcelona</p>
+            </div>
+            <div class="footer-col">
+              <h4>Horario</h4>
+              <p>Lun - Vie: 9:00 - 18:00</p>
+              <p>Sáb: 10:00 - 14:00</p>
+              <p>Dom: Cerrado</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 ParcBench. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

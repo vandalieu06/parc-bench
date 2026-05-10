@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#e8e4d9"/>
+  <rect x="50" y="100" width="300" height="60" rx="8" fill="#8B7355"/>
+  <rect x="80" y="160" width="15" height="80" rx="4" fill="#6B5344"/>
+  <rect x="305" y="160" width="15" height="80" rx="4" fill="#6B5344"/>
+  <rect x="150" y="160" width="15" height="80" rx="4" fill="#6B5344"/>
+  <text x="200" y="280" font-family="Arial" font-size="14" fill="#5a6a5a" text-anchor="middle">Banco Clásico del Parque Central</text>
+</svg>

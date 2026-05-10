@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#dcd8e8"/>
+  <rect x="55" y="95" width="290" height="60" rx="8" fill="#7c5cbf"/>
+  <rect x="80" y="155" width="16" height="85" rx="4" fill="#5c3c9f"/>
+  <rect x="298" y="155" width="16" height="85" rx="4" fill="#5c3c9f"/>
+  <rect x="175" y="155" width="16" height="85" rx="4" fill="#5c3c9f"/>
+  <text x="200" y="280" font-family="Arial" font-size="14" fill="#4c2c8f" text-anchor="middle">Banco Artesanal Colina del Silencio</text>
+</svg>
